@@ -1,4 +1,5 @@
-"# Sample Website
+<<<<<<< HEAD
+# Sample Website
 
 This is a sample website made as part of [*Learn Enough™ Git to Be
 Dangerous*](http://learnenough.com/git-tutorial), possibly the greatest
@@ -10,4 +11,9 @@ the email list](http://learnenough.com/#email_list) and [follow @learnenough
 After finishing *Learn Enough™ Git to Be Dangerous*, you'll know enough Git
 to be *dangerous*. This means you'll be able to use Git to track changes in
 your projects, back up data, share your work with others, and collaborate
-with programmers and other users of Git."
+with programmers and other users of Git.
+=======
+# website
+Site exemplo tutorial git learn enough
+hgjkl
+>>>>>>> 41bb440652968561523c4dc3d92a5ddaabd933d1
