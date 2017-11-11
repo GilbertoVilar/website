@@ -14,6 +14,12 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 <body>
 
@@ -24,8 +30,10 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">Quem somos</a>
+      <a href="#how" class="w3-bar-item w3-button">Como funciona</a>
       <a href="#about" class="w3-bar-item w3-button">Restaurantes</a>
-      <a href="#contact" class="w3-bar-item w3-button">Administradores</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contato</a>
+      <a href="#login" class="w3-bar-item w3-button">Login</a>
     </div>
   </div>
 </div>
@@ -34,18 +42,34 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="http://prceu.usp.br/girocultural/wp-content/uploads/2015/11/pra%C3%A7a-do-rel%C3%B3gio-e1449573621354.jpg" alt="Praça Do relógio" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>USP</b></span> <span class="w3-hide-small w3-text-light-grey"> <b>VemDeBandeco </b></span></h1>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>USP</b></span> <span class="w3-hide-small w3-text-light-grey"> <b>VemDeBandeco! </b></span></h1>
   </div>
 </header>
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
-  <!-- Project Section -->
+  <!-- Quem somos -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quem somos</h3>
-    <p> Somos uma equipe de alunos da Escola Politécnica da USP que desenvolveu uma ferramenta prática para o cotidiano da comunidade uspiana. Dessa forma, o objetivo principal deste site é ajudar todos que usufruem dos restaurantes universitários aqui cadastrados, expondo informações sobre tamanho de tempo médio de fila em cada um deles!</p>
-  	<p>Para isso, contamos com a ajuda de todos! Coletamos dados de usuários do site para calcular algumas estatísticas e devolver para o público dados úteis. </p>
+    <p> Somos uma equipe de alunos da Escola Politécnica da USP e desenvolvemos uma ferramenta prática para o cotidiano da comunidade uspiana. O objetivo principal deste site é ajudar todos que usufruem dos restaurantes universitários aqui cadastrados, expondo informações sobre tamanho da fila, tempo médio de espera, cardápio e status de funcionamento em cada um deles!</p>
+  	<p>Para isso, precisamos coletar alguns dados relacionados a entrada e saída de cada estudante na fila do restaurante. Contamos com a ajuda de todos!</p>
+    
+    <!-- Como funciona -->
+  <div class="w3-container w3-padding-32" id="how">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Como funciona</h3>
+    <p>  Para colaborar com seus dados informativos, você precisará seguir alguns passos muito simples!</p>
+    
+    
+    <ol>
+    <li>Defina o restaurante no qual você pretende realizar a refeição através da aba restaurantes. Faça sua opção utilizando os dados que disponibilizamos para cada restaurante. </li>
+    <li>Ao chegar na fila, procure o QR Code mais próximo da sua posição e aponte a câmera do seu smartfone. Assim podemos identificar sua posição e horário de entrada na fila</li>
+    <li>Assim que passar pela catraca, use os preciosos segundos que o separa das bandejas para confirmar a saída da fila, clicando em "Fui atendido". Assim podemos determinar seu horário de saída da fila.</li>
+    <li>VÁ COMER!</li>
+    </ol>
+    
+    
+   
  	<p>Agradeçemos a colaboração!</p>
  	<h3 style="text-align:center;">[COLOCAR IMAGEM, GIF, ALGUMA COISA]</h3>
   </div>
@@ -130,7 +154,7 @@
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
-    <p>Gostou do projeto? Possui alguma sugestão, crítica ou até mesmo detectou uma falha em nosso servidor? Entre em contato conosco!</p>
+    <p>Gostou do projeto? Possui alguma sugestão ou crítica? Entre em contato conosco deixando um comentário!</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input" type="text" placeholder="Nome" required name="Name">
       <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
@@ -172,6 +196,31 @@ function myMap()
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
+
+<!-- Login -->
+
+<div class="w3-container w3-padding-32" id="login">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Login</h3>
+    <p>Área destinada apenas à administradores.</p>
+    
+<div class="container">
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Senha:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Enter</button>
+  </form>
+</div>
+
+</div>
 
 <footer class="footer-distributed">
 
